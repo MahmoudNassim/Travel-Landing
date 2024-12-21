@@ -165,6 +165,9 @@ nav {
   border: 1px solid #1576d6;
   background-color: #1576d6;
   color: white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
 }
 .alarm {
   background-color: #f4c123;
@@ -302,6 +305,7 @@ nav {
   }
   .component-con {
     width: 358px;
+    max-width: 100%;
     position: static;
     margin-top: 24px;
     height: 168px;
@@ -313,6 +317,7 @@ nav {
   .component-con .component {
     display: block;
     margin: 0;
+    width: 100%;
   }
   .component-con img {
     height: 20px;
@@ -365,7 +370,7 @@ nav {
     text-align: center;
   }
 }
-@media screen and (min-width:768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .back-img {
     background-image: url("./images/bg.jpg");
     width: 1240px;
