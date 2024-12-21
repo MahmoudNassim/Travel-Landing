@@ -695,7 +695,7 @@ nav {
     display: block;
   }
   .choose-us{
-    align-items: center;
+    text-align: center;
   }
   .privilege{
     flex-direction: column;
