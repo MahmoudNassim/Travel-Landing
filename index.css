@@ -39,6 +39,7 @@ header .iconDiv {
 nav {
   display: flex;
   gap: 48px;
+  margin-right: 12px;
 }
 .actionsDiv {
   display: flex;
@@ -126,14 +127,20 @@ nav {
   justify-content: center;
   gap: 12px;
   margin-left: 12px;
+  width: 846px;
+  max-width: 82%;
 }
 .component-con .component .top {
   display: flex;
-  gap: 16px;
+  gap: 12px;
+  width: 454px;
+  max-width: 54%;
 }
 .component-con .component .bottom {
   display: flex;
-  gap: 16px;
+  gap: 12px;
+  width: 392px;
+  max-width: 46%;
 }
 .component-flex {
   display: flex;
@@ -158,6 +165,7 @@ nav {
 }
 .component-con button {
   width: 148px;
+  max-width: 18%;
   height: 44px;
   padding: 12px 18px;
   border-radius: 6px;
@@ -220,7 +228,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-  align-items: center;
 }
 .balloon {
   max-width: 241px;
@@ -228,7 +235,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  align-items: center;
 }
 .diamond {
   max-width: 241px;
@@ -236,7 +242,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  align-items: center;
 }
 .medal {
   max-width: 241px;
@@ -244,7 +249,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  align-items: center;
 }
 .privilege h2 {
   font-size: 18px;
@@ -259,11 +263,12 @@ nav {
 .img-6 {
   width: 60px;
   height: 60px;
+  margin-left: 20px;
 }
 
 /* Media query */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   nav {
     display: none;
   }
@@ -309,19 +314,37 @@ nav {
     position: static;
     margin-top: 24px;
     height: 168px;
+    max-height: 100%;
     font-size: 12px;
     background-color: transparent;
     box-shadow: 0 0 0 0;
     flex-direction: column;
   }
   .component-con .component {
-    display: block;
     margin: 0;
     width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
   .component-con img {
     height: 20px;
     width: 20px;
+  }
+  .img-6{
+    margin: 0;
+  }
+  .component-con .component .top{
+
+width: 358px;
+
+max-width: 100%;
+
+}
+  .component-con .component .bottom{
+    
+width: 358px;
+    
+max-width: 100%;
   }
   .component-con .component .one {
     width: 171px;
@@ -337,6 +360,7 @@ nav {
   }
   .component-con button {
     width: 358px;
+    max-width: 100%;
     height: 44px;
     padding: 12px 18px;
     border-radius: 6px;
@@ -369,6 +393,18 @@ nav {
     align-items: center;
     text-align: center;
   }
+  .ticket {
+    align-items: center;
+  }
+  .balloon {
+    align-items: center;
+  }
+  .diamond {
+    align-items: center;
+  }
+  .medal {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .back-img {
@@ -387,5 +423,24 @@ nav {
     text-align: center;
     margin-left: 16px;
     padding-bottom: 30px;
+  }
+  .component-con .component {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-left: 12px;
+  }
+  .component-con button {
+    width: 148px;
+    height: 44px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-right: 12px;
+    border: 1px solid #1576d6;
+    background-color: #1576d6;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
   }
 }
